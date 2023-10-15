@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="../js/main.min.js"></script>
+  <script src="../js/index.js" defer></script>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header header_white header_absolute">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="logo">
+            <picture>
+              <img src="img/logo.png" alt="логотип union auto">
+            </picture>
+          </a>
+          <nav class="nav">
+            <ul class="header__menu">
+              <li class="header__item">
+                <a href="#" class="header__link">FOR SALE</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">AUTOPARTS</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">SERVICING</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__burger">
+            <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 19H31" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M1 10H31" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M1 1H31" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <!-- section top -->
+      <section class="top" style="background-image: url(img/bgTop.jpg);">
+        <div class="container">
+          <div class="top__inner">
+            <h1 class="top__title">FIND YOUR NEXT CAR</h1>
+            <h2 class="top__subtitle">PREMIUM CARS FROM DUBAI</h2>
+            <a href="#navogation" class="top__link">
+              lets go
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- block -->
+      <div id="navogation" class="info-navigation">
+        <div class="container">
+          <div class="info-navigation__inner">
+            <div class="info-navigation__item" style="background-image: url(img/info-nav/1.jpg);">
+              <h2 class="info-navigation__title">CARS FOR SALE</h2>
+              <a class="info-navigation__link" href="">MORE</a>
+            </div>
+            <div class="info-navigation__item" style="background-image: url(img/info-nav/2.jpg);">
+              <h2 class="info-navigation__title">AUTOPARTS</h2>
+              <a class="info-navigation__link" href="">MORE</a>
+            </div>
+            <div class="info-navigation__item" style="background-image: url(img/info-nav/3.jpg);">
+              <h2 class="info-navigation__title">SERVICING</h2>
+              <a class="info-navigation__link" href="">MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- choose -->
+      <section class="choose">
+        <div class="container">
+          <h2 class="choose__title title_main">CHOOSE your vehicle</h2>
+          <div class="choose__btns">
+            <button id="chooseBody" class="choose__btn choose__btn_active">
+              <span>Body type</span>
+            </button>
+            <button id="chooseBrand" class="choose__btn">
+              <span>Brand</span>
+            </button>
+          </div>
+          <div class="choose__line">
+            <div class="choose__box choose__body">
+              <ul class="choose__list">
+                <li class="choose__item">
+                  <a href="#">
+                    <picture>
+                      <img src="img/choose/1.png" alt="SUV">
+                    </picture>
+                    <p class="choose__txt">SUV</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/2.png" alt="Sedan">
+                    </picture>
+                    <p class="choose__txt">Sedan</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/3.png" alt="Wagon">
+                    </picture>
+                    <p class="choose__txt">Wagon</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/4.png" alt="Hatch">
+                    </picture>
+                    <p class="choose__txt">Hatch</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/5.png" alt="Ute">
+                    </picture>
+                    <p class="choose__txt">Ute</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/6.png" alt="Convertible">
+                    </picture>
+                    <p class="choose__txt">Convertible</p>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="choose__item choose__item_dis">
+                  <a href="#">
+                    <picture>
+                      <img src="img/choose/1.png" alt="SUV">
+                    </picture>
+                    <p class="choose__txt">SUV</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/2.png" alt="Sedan">
+                    </picture>
+                    <p class="choose__txt">Sedan</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/3.png" alt="Wagon">
+                    </picture>
+                    <p class="choose__txt">Wagon</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/4.png" alt="Hatch">
+                    </picture>
+                    <p class="choose__txt">Hatch</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/5.png" alt="Ute">
+                    </picture>
+                    <p class="choose__txt">Ute</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/6.png" alt="Convertible">
+                    </picture>
+                    <p class="choose__txt">Convertible</p>
+                  </a>
+                </li>
+              </ul>
+              <button class="choose__all">
+                Show all
+              </button>
+            </div>
+            <div class="choose__box choose__brand">
+              <ul class="choose__list">
+                <li class="choose__item">
+                  <a href="#">
+                    <picture>
+                      <img src="img/choose/brand/1.png" alt="Mersedes-Benz">
+                    </picture>
+                    <p class="choose__txt">Mersedes-Benz</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/2.png" alt="Lexus">
+                    </picture>
+                    <p class="choose__txt">Lexus</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/3.png" alt="Tayota">
+                    </picture>
+                    <p class="choose__txt">Tayota</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/4.png" alt="Ford">
+                    </picture>
+                    <p class="choose__txt">Ford</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/5.png" alt="Mitsubishi">
+                    </picture>
+                    <p class="choose__txt">Mitsubishi</p>
+                  </a>
+                </li>
+                <li class="choose__item">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/6.png" alt="Subaru">
+                    </picture>
+                    <p class="choose__txt">Subaru</p>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="choose__item choose__item_dis">
+                  <a href="#">
+                    <picture>
+                      <img src="img/choose/brand/1.png" alt="Mersedes-Benz">
+                    </picture>
+                    <p class="choose__txt">Mersedes-Benz</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/2.png" alt="Lexus">
+                    </picture>
+                    <p class="choose__txt">Lexus</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/3.png" alt="Tayota">
+                    </picture>
+                    <p class="choose__txt">Tayota</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/4.png" alt="Ford">
+                    </picture>
+                    <p class="choose__txt">Ford</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/5.png" alt="Mitsubishi">
+                    </picture>
+                    <p class="choose__txt">Mitsubishi</p>
+                  </a>
+                </li>
+                <li class="choose__item choose__item_dis">
+                  <a href="">
+                    <picture>
+                      <img src="img/choose/brand/6.png" alt="Subaru">
+                    </picture>
+                    <p class="choose__txt">Subaru</p>
+                  </a>
+                </li>
+              </ul>
+              <button class="choose__all">
+                Show all
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- offer -->
+      <section class="offer">
+        <h2 class="offer__title title_main">
+          HOT DEALS
+        </h2>
+        <div class="container">
+          <ul class="card__list">
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__top">
+                  <h3 class="card__title">Lexus LX LX500d</h3>
+                  <p class="card__relevance">NEW</p>
+                </div>
+                <time class="card__time" datetime="10.10.2022">2022</time>
+                <strong class="card__decor">LEXUS</strong>
+                <picture class="card__img">
+                  <img src="img/car/1.png" alt="Lexus LX LX500d">
+                </picture>
+                <ul class="card__info">
+                  <li class="card__info-item">
+                    <img src="img/car/d1.svg" alt="Двигатель иконка">
+                    <span>5.7 L</span>
+                  </li>
+                  <li class="card__info-item">
+                    <img src="img/car/d2.svg" alt="Привод иконка">
+                    <span>AWD</span>
+                  </li>
+                  <li class="card__info-item">
+                    <img src="img/car/d3.svg" alt="Тип кузова иконка">
+                    <span>SUV</span>
+                  </li>
+                </ul>
+                <button class="card__btn">
+                  458 750 AED
+                </button>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__top">
+                  <h3 class="card__title">Mitsubishi Pajero Sport GLX</h3>
+                  <p class="card__relevance">NEW</p>
+                </div>
+                <div class="card__body">
+                  <time class="card__time" datetime="10.10.2022">2023</time>
+                  <strong class="card__decor">Mitsubishi</strong>
+                  <picture class="card__img">
+                    <img src="img/car/2.png" alt="Mitsubishi Pajero Sport GLX">
+                  </picture>
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <img src="img/car/d1.svg" alt="Двигатель иконка">
+                      <span>2.4 L</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d2.svg" alt="Привод иконка">
+                      <span>AWD</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d3.svg" alt="Тип кузова иконка">
+                      <span>SUV</span>
+                    </li>
+                  </ul>
+                  <button class="card__btn">
+                    458 750 AED
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__top">
+                  <h3 class="card__title">Lexus UX UX200 Luxury</h3>
+                  <p class="card__relevance">NEW</p>
+                </div>
+                <div class="card__body">
+                  <time class="card__time" datetime="10.10.2022">2023</time>
+                  <strong class="card__decor">Lexus</strong>
+                  <picture class="card__img">
+                    <img src="img/car/3.png" alt="Lexus UX UX200 Luxury">
+                  </picture>
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <img src="img/car/d1.svg" alt="Двигатель иконка">
+                      <span>2.0 L</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d2.svg" alt="Привод иконка">
+                      <span>AWD</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d3.svg" alt="Тип кузова иконка">
+                      <span>SUV</span>
+                    </li>
+                  </ul>
+                  <button class="card__btn">
+                    458 750 AED
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__top">
+                  <h3 class="card__title">Mercedes-Benz G-Class</h3>
+                  <p class="card__relevance">NEW</p>
+                </div>
+                <div class="card__body">
+                  <time class="card__time" datetime="10.10.2022">2022</time>
+                  <strong class="card__decor">Mercedes</strong>
+                  <picture class="card__img">
+                    <img src="img/car/4.png" alt="Lexus UX UX200 Luxury">
+                  </picture>
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <img src="img/car/d1.svg" alt="Двигатель иконка">
+                      <span>4.0 L</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d2.svg" alt="Привод иконка">
+                      <span>AWD</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d3.svg" alt="Тип кузова иконка">
+                      <span>SUV</span>
+                    </li>
+                  </ul>
+                  <button class="card__btn">
+                    458 750 AED
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__top">
+                  <h3 class="card__title">Lexus LX LX500d</h3>
+                  <p class="card__relevance">NEW</p>
+                </div>
+                <time class="card__time" datetime="10.10.2022">2022</time>
+                <strong class="card__decor">LEXUS</strong>
+                <picture class="card__img">
+                  <img src="img/car/1.png" alt="Lexus LX LX500d">
+                </picture>
+                <ul class="card__info">
+                  <li class="card__info-item">
+                    <img src="img/car/d1.svg" alt="Двигатель иконка">
+                    <span>5.7 L</span>
+                  </li>
+                  <li class="card__info-item">
+                    <img src="img/car/d2.svg" alt="Привод иконка">
+                    <span>AWD</span>
+                  </li>
+                  <li class="card__info-item">
+                    <img src="img/car/d3.svg" alt="Тип кузова иконка">
+                    <span>SUV</span>
+                  </li>
+                </ul>
+                <button class="card__btn">
+                  458 750 AED
+                </button>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__top">
+                  <h3 class="card__title">Mitsubishi Pajero Sport GLX</h3>
+                  <p class="card__relevance">NEW</p>
+                </div>
+                <div class="card__body">
+                  <time class="card__time" datetime="10.10.2022">2023</time>
+                  <strong class="card__decor">Mitsubishi</strong>
+                  <picture class="card__img">
+                    <img src="img/car/2.png" alt="Mitsubishi Pajero Sport GLX">
+                  </picture>
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <img src="img/car/d1.svg" alt="Двигатель иконка">
+                      <span>2.4 L</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d2.svg" alt="Привод иконка">
+                      <span>AWD</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d3.svg" alt="Тип кузова иконка">
+                      <span>SUV</span>
+                    </li>
+                  </ul>
+                  <button class="card__btn">
+                    458 750 AED
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__top">
+                  <h3 class="card__title">Lexus UX UX200 Luxury</h3>
+                  <p class="card__relevance">NEW</p>
+                </div>
+                <div class="card__body">
+                  <time class="card__time" datetime="10.10.2022">2023</time>
+                  <strong class="card__decor">Lexus</strong>
+                  <picture class="card__img">
+                    <img src="img/car/3.png" alt="Lexus UX UX200 Luxury">
+                  </picture>
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <img src="img/car/d1.svg" alt="Двигатель иконка">
+                      <span>2.0 L</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d2.svg" alt="Привод иконка">
+                      <span>AWD</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d3.svg" alt="Тип кузова иконка">
+                      <span>SUV</span>
+                    </li>
+                  </ul>
+                  <button class="card__btn">
+                    458 750 AED
+                  </button>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a class="card__link" href="#">
+                <div class="card__top">
+                  <h3 class="card__title">Mercedes-Benz G-Class</h3>
+                  <p class="card__relevance">NEW</p>
+                </div>
+                <div class="card__body">
+                  <time class="card__time" datetime="10.10.2022">2022</time>
+                  <strong class="card__decor">Mercedes</strong>
+                  <picture class="card__img">
+                    <img src="img/car/4.png" alt="Lexus UX UX200 Luxury">
+                  </picture>
+                  <ul class="card__info">
+                    <li class="card__info-item">
+                      <img src="img/car/d1.svg" alt="Двигатель иконка">
+                      <span>4.0 L</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d2.svg" alt="Привод иконка">
+                      <span>AWD</span>
+                    </li>
+                    <li class="card__info-item">
+                      <img src="img/car/d3.svg" alt="Тип кузова иконка">
+                      <span>SUV</span>
+                    </li>
+                  </ul>
+                  <button class="card__btn">
+                    458 750 AED
+                  </button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- slider photos -->
+      <div class="photos">
+        <div class="container">
+          <div class="photos-slider">
+            <div class="swiper-wrapper">
+              <div class="photos-slider__slide swiper-slide"
+                style="background-image: url(https://images.unsplash.com/photo-1511919884226-fd3cad34687c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);">
+              </div>
+              <div class="photos-slider__slide swiper-slide"
+                style="background-image: url(https://images.unsplash.com/photo-1493238792000-8113da705763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60);">
+              </div>
+              <div class="photos-slider__slide swiper-slide"
+                style="background-image: url(https://images.unsplash.com/photo-1485291571150-772bcfc10da5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80);">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- purchase -->
+      <section class="purchase">
+        <div class="container">
+          <h2 class="purchase__title">
+            Как купить автомобиль с доставкой в страны СНГ
+          </h2>
+          <ul class="purchase__list list_three">
+            <li class="purchase__item">
+              <strong class="purchase__count"></strong>
+              <h3 class="purchase__item-title">ЗАЯВКА</h3>
+              <p class="purchase__txt">Вы звоните нам или оставляете заявку на сайте и с Вами связывается наш
+                менеджер.</p>
+            </li>
+            <li class="purchase__item">
+              <strong class="purchase__count"></strong>
+              <h3 class="purchase__item-title">ДОГОВОР</h3>
+              <p class="purchase__txt">Согласовываем автомобиль, условия<br> работы и подписываем договор.<br> Вносите
+                предоплату.</p>
+            </li>
+            <li class="purchase__item">
+              <strong class="purchase__count"></strong>
+              <h3 class="purchase__item-title">ОПЛАТА</h3>
+              <p class="purchase__txt">После подписания договора,<br> выставляется инвойс за автомобиль.</p>
+            </li>
+          </ul>
+          <ul class="purchase__list list_two">
+            <li class="purchase__item">
+              <strong class="purchase__count"></strong>
+              <h3 class="purchase__item-title">ДОСТАВКА</h3>
+              <p class="purchase__txt">Ожидаете от 30 до 60 дней (зависит от страны<br> и пункта назначения).</p>
+            </li>
+            <li class="purchase__item">
+              <strong class="purchase__count"></strong>
+              <div class="purchase__info">
+                <div>
+                  <h3 class="purchase__item-title">ОТПРАВИТЬ ЗАПРОС</h3>
+                  <p class="purchase__txt">Оставьте контактные данные и мы<br> обязательно свяжемся с вами</p>
+                </div>
+                <button class="purchase__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+      <!-- advantages -->
+      <div class="advantages">
+        <div class="container">
+          <div class="advantages__inner" style="background-image: url(img/bgAdvantages.png);">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__item-title">ПОКУПКА<br> АВТОМОБИЛЯ</h3>
+                <div class="advantages__info">
+                  <p class="advantages__txt">В нашем автосалоне можно приобрести новые машины.</p>
+                  <p class="advantages__txt">Также можно воспользоваться услугой подбора автомобиля с пробегом и заказа
+                    авто с аукционов США.</p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__item-title">ИНДИВИДУАЛЬНЫЙ<br> ПОДХОД</h3>
+                <div class="advantages__info">
+                  <p class="advantages__txt">В спектр наших услуг дополнительно входит продажа и индивидуальный подбор
+                    мототехники, квадроциклов, коммерческого
+                    транспорта специальной техники.</p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__item-title">ОПЫТ И<br> НАДЕЖНОСТЬ</h3>
+                <div class="advantages__info">
+                  <p class="advantages__txt">Более 9 лет безупречной успешной работы, за это время мы обслужили огромное
+                    количество корпоративных и частных клиентов.</p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__item-title">СОТРУДНИЧЕСТВО<br> С НАМИ</h3>
+                <div class="advantages__info">
+                  <p class="advantages__txt">Гарантия надежного партнерства, доступных цен и индивидуального подхода к
+                    каждому клиенту.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__box">
+              <a class="footer__logo" href="/">
+                <img src="img/footerLogo.png" alt="логотип компании union auto trade">
+              </a>
+              <p class="footer__txt-info">Buy, autoparts or service premium cars from Dubai</p>
+              <ul class="footer__menu">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">FOR SALE</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">AUTOPARTS</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">SERVICING</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">ABOUT US</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__box">
+              <span class="footer__calback-txt">Call the office at:</span>
+              <a href="tel:+ 971 4 608 68 08" class="footer__calback-link">+ 971 4 608 68 08</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+</body>
+
+</html>
